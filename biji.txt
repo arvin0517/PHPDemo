@@ -1,0 +1,56 @@
+https://github.com/arvin0517/GameTrade.git
+
+
+https://github.com/arvin0517/PHPDemo.git
+
+SHA256:jatcBajoYKyFdftZj4w2WKLl+QzXDcu3DTqd9BgGaps Administrator@QOKQDICJP9OP4DW
+
+
+
+Your identification has been saved in github.
+Your public key has been saved in github.pub.
+The key fingerprint is:
+SHA256:jatcBajoYKyFdftZj4w2WKLl+QzXDcu3DTqd9BgGaps Administrator@QOKQDICJP9OP4DW
+The key's randomart image is:
++---[RSA 2048]----+
+|                 |
+|       .         |
+|  . . . .        |
+|.o o o  .+       |
+|ooo = ..S.o      |
+|o+ + *oB O+      |
+|. o =.BoO+==     |
+|     BE+.o++.    |
+|      = ... .    |
++----[SHA256]-----+
+
+
+
+
+
+
+{
+
+
+	"git_command": "C:/Program Files/Git/bin/git.exe"
+}
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+xampp mysql 中文乱码
+
+https://www.cnblogs.com/yeyupiaoling/p/6914120.html
+
+ default_character_set = utf8
+ 
+ character-set-server = utf8
+ collation-server = utf8_general_ci
+ 
+ default_character_set = utf8
+
+
+还要设置： 表的每一个字段: ALTER TABLE `stu` CHANGE `address` `address` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
