@@ -11,6 +11,7 @@
 			print "zhengwei";
 		}
 		printName();
+		//测试github
 		?> 
 	</div>
 	<div>欢迎<?php echo $_POST["fname"]; ?>!<br>
