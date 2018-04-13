@@ -16,14 +16,15 @@
 
    	die('连接失败：' . mysqli_connect_error());
    }
-   echo "name: $name";
-   echo "address: $address";
-   echo "sex: $sex \n";
+   // echo "name: $name";
+   // echo "address: $address";
+   // echo "sex: $sex \n";
    $sql = "INSERT INTO STUDENT (NAME, ADDRESS,SEX) VALUES ('" .$name. "', '" .$address. "', '" .$sex. "')";
-   echo "$sql";
+   //echo "$sql";
    if(mysqli_query($conn, $sql)){
 
-   	  echo "插入数据成功";
+   	 // echo "插入数据成功";
+   	 alert("插入数据成功");
    }
 
    mysqli_close($conn);

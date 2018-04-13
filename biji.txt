@@ -75,3 +75,37 @@ xshell
 
     2、 http://blog.sina.com.cn/s/blog_86e874d30101e3d8.html
         http://www.cnblogs.com/Johness/archive/2012/12/03/2800126.html
+
+
+
+
+
+    3、https://www.linuxidc.com/Linux/2016-06/132051p2.html
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+    虚拟机装linux centos系统
+        https://blog.csdn.net/yiyihuazi/article/details/78557216
+
+        http://www.jb51.net/article/97892.htm
+
+
+    虚拟机里面桥接和NAT连接的区别
+
+    https://blog.csdn.net/u010801439/article/details/53193113
+
+     
+
+    虚拟机 centos系统 主机名localhost.localdomain
+
+    root 密码： 123456
+
+    用户名：arvin 密码：123456
+
+
+
+
+    144
