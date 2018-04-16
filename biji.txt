@@ -32,13 +32,13 @@ The key's randomart image is:
 {
 
 
-	"git_command": "C:/Program Files/Git/bin/git.exe"
+  "git_command": "C:/Program Files/Git/bin/git.exe"
 }
 
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-xampp mysql ÖĞÎÄÂÒÂë
+xampp mysql ä¸­æ–‡ä¹±ç 
 
 https://www.cnblogs.com/yeyupiaoling/p/6914120.html
 
@@ -50,62 +50,71 @@ https://www.cnblogs.com/yeyupiaoling/p/6914120.html
  default_character_set = utf8
 
 
-»¹ÒªÉèÖÃ£º ±íµÄÃ¿Ò»¸ö×Ö¶Î: ALTER TABLE `stu` CHANGE `address` `address` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
+è¿˜è¦è®¾ç½®ï¼š è¡¨çš„æ¯ä¸€ä¸ªå­—æ®µ: ALTER TABLE `stu` CHANGE `address` `address` VARCHAR(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL;
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-   https://www.jianshu.com/p/789862840cad  Ã²ËÆÓĞ¿ÉÒÔÓÃµÄÆÆ½â°æ
+   https://www.jianshu.com/p/789862840cad  è²Œä¼¼æœ‰å¯ä»¥ç”¨çš„ç ´è§£ç‰ˆ
 
 xshell  
 
-  ÓÃ»§Ãû³Æ£ºSky123.Org
+  ç”¨æˆ·åç§°ï¼šSky123.Org
 
-  ¹«Ë¾Ãû³Æ£ºSky123.Org
+  å…¬å¸åç§°ï¼šSky123.Org
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-  ÈçºÎ°²×°windowsºÍlinuxË«ÏµÍ³
+  å¦‚ä½•å®‰è£…windowså’ŒlinuxåŒç³»ç»Ÿ
 
-    1¡¢ https://blog.csdn.net/w1300048671/article/details/79110241
+    1ã€ https://blog.csdn.net/w1300048671/article/details/79110241
 
 
 
-    2¡¢ http://blog.sina.com.cn/s/blog_86e874d30101e3d8.html
+    2ã€ http://blog.sina.com.cn/s/blog_86e874d30101e3d8.html
         http://www.cnblogs.com/Johness/archive/2012/12/03/2800126.html
 
 
 
 
 
-    3¡¢https://www.linuxidc.com/Linux/2016-06/132051p2.html
+    3ã€https://www.linuxidc.com/Linux/2016-06/132051p2.html
 
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-    ĞéÄâ»ú×°linux centosÏµÍ³
+    è™šæ‹Ÿæœºè£…linux centosç³»ç»Ÿ
         https://blog.csdn.net/yiyihuazi/article/details/78557216
 
         http://www.jb51.net/article/97892.htm
 
 
-    ĞéÄâ»úÀïÃæÇÅ½ÓºÍNATÁ¬½ÓµÄÇø±ğ
+    è™šæ‹Ÿæœºé‡Œé¢æ¡¥æ¥å’ŒNATè¿æ¥çš„åŒºåˆ«
 
     https://blog.csdn.net/u010801439/article/details/53193113
 
      
 
-    ĞéÄâ»ú centosÏµÍ³ Ö÷»úÃûlocalhost.localdomain
+    è™šæ‹Ÿæœº centosç³»ç»Ÿ ä¸»æœºålocalhost.localdomain
 
-    root ÃÜÂë£º 123456
+    root å¯†ç ï¼š 123456
 
-    ÓÃ»§Ãû£ºarvin ÃÜÂë£º123456
+    ç”¨æˆ·åï¼šarvin å¯†ç ï¼š123456
 
 
+    è™šæ‹Ÿæœºcentos7å®‰è£…ä¸­æ–‡è¾“å…¥æ³•ï¼š
 
+         yum install ibus-libpinyin 
+
+         å¦‚æœæç¤ºå·²ç»å®‰è£…å¥½äº†ï¼Œå°±å¯ä»¥åœ¨  è®¾ç½®---ã€‹åŒºåŸŸå’Œè¯­è¨€---ã€‹ è¾“å…¥æº --ã€‹æ·»åŠ è¾“å…¥æºï¼Œæœç´¢â€œpinyinâ€ï¼Œåˆ™å°±æ‰¾åˆ°å¦‚æœæ‰¾ä¸åˆ°ï¼Œå°±æœç´¢â€œæ±‰è¯­â€ï¼Œç„¶åç‚¹è¿›å»ï¼Œæœ‰ä¸ªâ€æ±‰è¯­pinyinâ€œå¯ä»¥é€‰æ‹©ã€‚
+
+
+   
+        xshell:
+          ssh-rsa 2048 59:71:28:db:b3:db:a8:c3:c3:bd:41:ec:4d:82:64:b4
 
     144
