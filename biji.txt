@@ -124,3 +124,22 @@ xshell
 
 
     html5  div居正中间的方法:https://www.cnblogs.com/jiekk/p/5802147.html
+
+                              
+          Matrix()的用法: http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/ 
+
+          transform: matrix(缩放参数X, n, n, 缩放参数y, 水平偏移距离, 垂直偏移距离);
+
+
+     旋转(rotate)
+         旋转相比前面两个要更高级些，要用到（可能勾起学生时代阴影的）三角函数。
+
+         方法以及参数使用如下（假设角度为θ）：
+
+          matrix(cosθ,sinθ,-sinθ,cosθ,0,0)
+
+
+          拉伸(skew)
+              拉伸也用到了三角函数，不过是tanθ，而且，其至于b, c两个参数相关，书写如下（注意y轴倾斜角度在前）：
+
+               matrix(1,tan(θy),tan(θx),1,0,0)
