@@ -123,8 +123,9 @@ xshell
 
 
 
-    html5  div居正中间的方法:https://www.cnblogs.com/jiekk/p/5802147.html
+    html5 
 
+          div居正中间的方法:https://www.cnblogs.com/jiekk/p/5802147.html
                               
           Matrix()的用法: http://www.zhangxinxu.com/wordpress/2012/06/css3-transform-matrix-%E7%9F%A9%E9%98%B5/ 
 
@@ -143,3 +144,11 @@ xshell
               拉伸也用到了三角函数，不过是tanθ，而且，其至于b, c两个参数相关，书写如下（注意y轴倾斜角度在前）：
 
                matrix(1,tan(θy),tan(θx),1,0,0)
+
+
+          CSS3 animation-fill-mode 属性
+
+          把物体动画地从一个地方移动到另一个地方，并让它停留在那里：
+
+          animation-fill-mode:forwards;
+          -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */
