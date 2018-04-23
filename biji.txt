@@ -152,3 +152,9 @@ xshell
 
           animation-fill-mode:forwards;
           -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */
+
+
+          animate.css:
+            资源：  https://daneden.github.io/animate.css/
+
+            使用方法：https://www.cnblogs.com/xiaohuochai/p/7372665.html
