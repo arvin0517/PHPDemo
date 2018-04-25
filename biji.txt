@@ -203,3 +203,18 @@ xshell
 
             # 优雅的停止nginx服务器，如果有未处理的数据，等待处理完成之后停止
             D:/resp_application/nginx-1.13.5> nginx -s quit
+
+
+            mysql : 3306 
+
+            apache: 80
+
+            nginx : 88
+
+
+            新建会话2  密匙
+            ssh-rsa 2048 59:71:28:db:b3:db:a8:c3:c3:bd:41:ec:4d:82:64:b4
+
+
+           腾讯云   PHP 方案开通指引
+            https://cloud.tencent.com/document/product/619/12793
