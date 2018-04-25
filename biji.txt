@@ -3,6 +3,9 @@ https://github.com/arvin0517/GameTrade.git
 
 https://github.com/arvin0517/PHPDemo.git
 
+
+https://github.com/arvin0517/Resource.git
+
 SHA256:jatcBajoYKyFdftZj4w2WKLl+QzXDcu3DTqd9BgGaps Administrator@QOKQDICJP9OP4DW
 
 
@@ -117,10 +120,10 @@ xshell
         xshell:
           ssh-rsa 2048 59:71:28:db:b3:db:a8:c3:c3:bd:41:ec:4d:82:64:b4
 
-    144
+    
 
 
-
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
     html5 
@@ -158,3 +161,45 @@ xshell
             资源：  https://daneden.github.io/animate.css/
 
             使用方法：https://www.cnblogs.com/xiaohuochai/p/7372665.html
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+      某宝网站中大部分功能也是直接使用nginx进行反向代理实现的，并且通过封装nginx和其他的组件之后起了个高大上的名字：Tengine，有兴趣的童鞋可以访问Tengine的官网查看具体的信息：
+
+      Tengine是由淘宝网发起的Web服务器项目。它在Nginx的基础上，针对大访问量网站的需求，添加了很多高级功能和特性。Tengine的性能和稳定性已经在大型的网站如淘宝网，天猫商城等得到了很好的检验。它的最终目标是打造一个高效、稳定、安全、易用的Web平台。
+
+      http://tengine.taobao.org/
+
+
+      nginx 
+
+      Nginx安装
+
+          1. windows安装
+              官方网站下载地址：
+
+              https://nginx.org/en/download.html
+ 
+              下载对应的版本的nginx压缩包，解压到自己电脑上存放软件的文件夹中即可
+
+          启动nginx
+            1） 直接双击该目录下的nginx.exe，即可启动nginx服务器
+
+            2） 命令行计入该文件夹，执行nginx命令，也会直接启动nginx服务器(这种比较好)
+
+                         D:/resp_application/nginx-1.13.5> nginx 或者  D:/resp_application/nginx-1.13.5>start nginx
+
+
+          停止nginx
+
+            命令行进入nginx根目录，执行如下命令，停止服务器：
+
+            # 强制停止nginx服务器，如果有未处理的数据，丢弃
+            D:/resp_application/nginx-1.13.5> nginx -s stop
+
+            # 优雅的停止nginx服务器，如果有未处理的数据，等待处理完成之后停止
+            D:/resp_application/nginx-1.13.5> nginx -s quit

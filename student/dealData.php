@@ -6,8 +6,8 @@
   
    $servername = "localhost:3306";
    $user = "root";
-   $password = "";
-   $dbname = "test";
+   $password = "123456";
+   $dbname = "testphp";
 
    //创建连接
    $conn = mysqli_connect( $servername ,$user, $password, $dbname);
@@ -23,8 +23,8 @@
    //echo "$sql";
    if(mysqli_query($conn, $sql)){
 
-   	 // echo "插入数据成功";
-   	 alert("插入数据成功");
+   	  echo "插入数据成功";
+   	 //alert("插入数据成功");
    }
 
    mysqli_close($conn);
