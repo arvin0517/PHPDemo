@@ -39,7 +39,34 @@ The key's randomart image is:
 }
 
 
+自己的笔记本:
 
+  安装路径
+
+     git : d:\Program Files\Git
+
+     xampp : d:xampp
+
+
+用户名和邮箱地址的作用
+
+用户名和邮箱地址是本地git客户端的一个变量，不随git库而改变。
+
+每次commit都会用用户名和邮箱纪录。
+
+github的contributions统计就是按邮箱来统计的。
+
+查看用户名和邮箱地址：
+
+$ git config user.name
+
+$ git config user.email
+
+修改用户名和邮箱地址：
+
+$ git config --global user.name "username"
+
+$ git config --global user.email "email"
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 xampp mysql 中文乱码
 
@@ -221,3 +248,20 @@ xshell
 
 
             120.25.226.95
+
+              ftpyanmian
+              yanmianlkjmp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
