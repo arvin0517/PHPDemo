@@ -259,9 +259,22 @@ xshell
 
 
 
+       
+       postman
+          https://www.cnblogs.com/xiaoxi-3-/p/7839278.html
 
 
 
 
+     public_html/Conf/alias.php
+
+
+     alituikuan/notify_url.php
+
+
+    PHPDemo/ajaxTest2.html
+
+
+    http://localhost/githubPHP/PHPDemo/ajaxTest2.html
 
 

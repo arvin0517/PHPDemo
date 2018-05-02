@@ -19,8 +19,8 @@
    // echo "name: $name";
    // echo "address: $address";
    // echo "sex: $sex \n";
-   //$sql = "INSERT INTO STUDENT (NAME, ADDRESS,SEX) VALUES ('" .$name. "', '" .$address. "', '" .$sex. "')";
-     $sql = "UPDATE Persons SET name='詹姆斯' WHERE name='郑玮' ";
+   $sql = "INSERT INTO STUDENT (NAME, ADDRESS,SEX) VALUES ('" .$name. "', '" .$address. "', '" .$sex. "')";
+   //  $sql = "UPDATE Persons SET name='詹姆斯' WHERE name='郑玮' ";
    //echo "$sql";
    if(mysqli_query($conn, $sql)){
 

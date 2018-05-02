@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			window.onload = function(){
+				var haha = document.getElementById("haha");
+				var btn  = document.getElementById("btn");
+				btn.onclick = function(){
+					
+					//haha.innerHTML = "二次数据";
+					showResult(haha.innerText);
+					
+				}
+
+				function showResult(str)
+				{
+
+				    if (window.XMLHttpRequest)
+				    {// IE7+, Firefox, Chrome, Opera, Safari 浏览器执行
+				        xmlhttp=new XMLHttpRequest();
+				    }
+				    else
+				    {// IE6, IE5 浏览器执行
+				        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+				    }
+				    xmlhttp.onreadystatechange=function()
+				    {
+				        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+				        {
+				        	var phparray = JSON.parse(xmlhttp.responseText);
+				        	//debugger;
+				            haha.innerHTML= phparray['Peter'];
+				           
+				        }
+				    }
+				    xmlhttp.open("get","ajaxphp2.php?q="+str,true);
+				    xmlhttp.send();
+				}
+
+			}
+
+		</script>
+	</head>
+	<body>
+		<div id="haha">初始数据</div>
+        <input type="button" id="btn" value="修改" />
+	</body>
+</html>
