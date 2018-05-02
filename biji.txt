@@ -249,6 +249,7 @@ xshell
 
             120.25.226.95
 
+
               ftpyanmian
               yanmianlkjmp
 
@@ -276,5 +277,7 @@ xshell
 
 
     http://localhost/githubPHP/PHPDemo/ajaxTest2.html
+ 
 
 
+    JSON.parse()和JSON.stringify()用法解析
