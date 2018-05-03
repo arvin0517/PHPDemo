@@ -31,7 +31,8 @@
       $temparray = explode(".", $_FILES["file"]["name"]);
       $str  = end($temparray);
       $text = "";
-      echo "文件后缀str:".$str."<br>";
+      $imgsrc = "";
+      echo "文件后缀:".$str."<br>";
       if($str == "txt"){
         echo "文件内容：<br>";
         $myfile = fopen("upload/" . $_FILES["file"]["name"], "r") or die("Unable to open file!");
@@ -41,6 +42,10 @@
 		  $text .= fgets($myfile)."<br>";
 		}
 		fclose($myfile);     	
+      }
+      else{
+       $imgsrc = "upload/" . $_FILES["file"]["name"];
+        
       }
 
 
@@ -58,19 +63,26 @@
 		<script type="text/javascript">
 			window.onload = function(){
 			var haha = document.getElementById("text");
-			var btn  = document.getElementById("img");
+			var testimg  = document.getElementById("img");
+			var btn  = document.getElementById("btn");
 			btn.onclick = function(){
 				
-				haha.innerHTML = "二次数据";
-			
-			}		
+			//	haha.innerHTML = ;
+		     	}		
 			}
 
 		</script>
+		<style type="text/css">
+			.unshow{
+
+                 display: none;
+			}
+
+		</style>
 	</head>
 	<body>
-        <textarea id="text"></textarea>
-        <img id="img" src=""/>
-        <input type="button" id="btn" value="修改" />
+        <textarea id="text" class="<?php  if ($text=="") echo 'unshow'; ?>" > <?php  if ($text!="") echo $text; ?></textarea>
+        <img style="width: 200px;" id="img" src= "<?php  if ($imgsrc!="") echo $imgsrc; ?>" class="<?php  if ($imgsrc=="") echo 'unshow'; ?>" />
+        <!-- <input type="button" id="btn" value="修改" /> -->
 	</body>
 </html>

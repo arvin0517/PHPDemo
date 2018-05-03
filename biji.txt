@@ -281,3 +281,87 @@ xshell
 
 
     JSON.parse()和JSON.stringify()用法解析
+
+
+    ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+    百度地图
+
+       说明书: http://lbsyun.baidu.com/index.php?title=jspopular/guide/helloworld
+
+       应用名称:浏览器arvin
+             AK: NaGZcK6tyD0Q9pUDj4HCFkA88eUGkSmd  浏览器端
+
+
+       注意的地方:
+
+             移动平台的屏幕尺寸通常比PC或笔记本要小，操作方式也有所不同。为了更好的在手机浏览器上展示地图，我们有如下建议：
+
+                   将地图容器高设置为100%，使其充满整个屏幕，或者您也可以计算浏览器窗口的大小并进行设置。
+
+                   添加下面的meta标签： <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 这样做是为了让页面以正常比例进行显示并且禁止用户缩放页面的操作。
+
+       设置容器样式
+              设置容器样式大小，使地图充满整个浏览器窗口：
+              <style type="text/css">  
+                  html{height:100%}    
+                  body{height:100%;margin:0px;padding:0px}    
+                  #container{height:100%}    
+              </style>
+
+      引用百度地图API文件
+             <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=您的密钥"></script>
+             <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=NaGZcK6tyD0Q9pUDj4HCFkA88eUGkSmd">
+ 
+      <div id="container"></div> 
+      <script type="text/javascript"> 
+      var map = new BMap.Map("container");  // 创建地图实例  
+      
+      var point = new BMap.Point(116.404, 39.915); // 创建点坐标    //116.404表示经度，39.915表示纬度。（为天安门坐标）
+      
+      map.centerAndZoom(point, 15);    // 初始化地图，设置中心点坐标和地图级别  
+    
+      </script> 
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
