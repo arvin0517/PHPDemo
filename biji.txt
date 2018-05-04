@@ -255,8 +255,11 @@ xshell
 
 
 
-
-
+           腾讯云数据库
+                用户：root
+                密码: 9rt448Co
+     
+              wx99ac88fe97caf2e4
 
 
 
@@ -330,18 +333,38 @@ xshell
 
 
 
+   js   module.exports 用法
+
+bar.js 会用到 square 模块，square 模块导出了 Square 类：
+      const Square  = require('./square.js');
+      const mySquare = new Square(2);
+      console.log(`mySquare 的面积是 ${mySquare.area()}`);
+
+
+square 模块定义在 square.js 中：
+
+      // 赋值给 `exports` 不会修改模块，必须使用 `module.exports`
+      module.exports = class Square {
+        constructor(width) {     //constructor表示构造函数
+          this.width = width;
+        }
+
+        area() {
+          return this.width ** 2;
+        }
+      };
+
+      模块系统在 `require('module')` 模块中实现。
+
+
+
+  js中，在双引号中，我们可以通过  ${XXX} 来代表某个变量。
 
 
 
 
 
-
-
-
-
-
-
-
+     es6 :  部分知识 https://www.jianshu.com/p/287e0bb867ae
 
 
 
