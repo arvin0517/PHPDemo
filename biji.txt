@@ -46,7 +46,9 @@ The key's randomart image is:
      git : d:\Program Files\Git
 
      xampp : d:xampp
-
+      
+      xshell :d:\Program Files (x86)\NetSarang\Xshell 5
+      xftp : d:\Program Files (x86)\NetSarang\Xftp 5
 
 用户名和邮箱地址的作用
 
@@ -374,12 +376,14 @@ square 模块定义在 square.js 中：
 
 云服务器的配置
 
-wshell密钥 ssh-rsa 2048 ea:5f:c8:8a:05:f6:c6:4c:e9:ed:bc:fd:96:a7:17:85   
+xshell密钥 ssh-rsa 2048 ea:5f:c8:8a:05:f6:c6:4c:e9:ed:bc:fd:96:a7:17:85   
+
+           ssh-rsa 2048 ea:5f:c8:8a:05:f6:c6:4c:e9:ed:bc:fd:96:a7:17:85
 
 ip : 45.77.27.236
 
 用户名：  root
-密码：    6=Qd8-r.%m5?zp[$
+密码：    6=Qd8-.r%m5?zp[$
 
 CentOS7安装iptables防火墙： https://blog.csdn.net/l1028386804/article/details/50779761
 
