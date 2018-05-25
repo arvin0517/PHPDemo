@@ -256,6 +256,9 @@ xshell
               yanmianlkjmp
 
 
+              perfmon -res
+
+
 
            腾讯云数据库
                 用户：root
