@@ -419,9 +419,11 @@ a        默认根目录: /var/www/html
 
    http://www.duanliang920.com/learn/web354.html
 
+   http://itbyc.com/
+
 
    cubic-bezier 贝塞尔曲线生成器 :http://yisibl.github.io/cubic-bezier/#.59,-1.05,.63,1.6
-
+ 
 开始个人博客：
 
   （1）
