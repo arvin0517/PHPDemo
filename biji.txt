@@ -455,6 +455,58 @@ a        默认根目录: /var/www/html
    (3) layui
 
    (4) 日历控件 http://www.jq22.com/yanshi15933
+
+   (5)自定义图标   font-face属性   Icon Font webfont
+
+       ‘\f33f’是如何被显示为图标的？答：这里用到了WebFont，也就是一种“字体”，这种字体包含了矢量图标，诸如 ‘\f33f’就是对应矢量图标的编码。
+       你这段代码并不全，css里应该还包含这段：
+       @font-face {
+          font-family: 'XXX'; /* 给你的自定义WebFont命名 */
+          src:url('xxx.eot');
+          src:url('xxx.eot?#iefix') format('embedded-opentype'),
+            url('xxx.woff') format('woff'),
+            url('xxxn.ttf') format('truetype'),
+            url('xxx.svg#micon') format('svg');
+          font-weight: normal;
+          font-style: normal;
+         ...
+         }
+
+
+      就出现了一种题主展示的解决方案：
+      HTML:<i class="icon icon_open"></i>
+
+      CSS:@font-face{
+        font-family: 'MyFont'; /* 给你的自定义WebFont命名 */
+        src:url('xxx.eot');
+        src:url('xxx.eot?#iefix') format('embedded-opentype'),
+          url('xxx.woff') format('woff'),
+          url('xxxn.ttf') format('truetype'),
+          url('xxx.svg#micon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+              ...
+      }
+
+      .icon{
+              font-family: 'MyFont';
+              speak:none; /* 无障碍阅读所需要的，告诉屏幕阅读器不要读这个字符 */
+              font-size:14px;
+              font-variant:normal;
+              font-weight:normal;
+              text-transform: none;
+              ...
+      }
+
+      .icon_open:before{
+              content:"\f001"; /* 相应图标的编码 */
+              ...
+      }
+
+      然后你只要在任何你想使用该图标的地方插入HTML即可：<nav>
+            <a href="open.html"><i class="icon icon_open"></i>Open</a>
+      </nav>
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
