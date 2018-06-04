@@ -542,7 +542,7 @@ a        默认根目录: /var/www/html
 
         https://blog.csdn.net/sunny_desmond/article/details/64905005
 
-        关于js判断鼠标移入元素的方向--解释 http://www.cnblogs.com/songbyjson/p/4507637.html
+        关于js判断鼠标移入元素的方向--解释 http://www.cnblogs.com/songbyjson/p/4507637.html   http://www.jb51.net/article/43981.htm
 
         function mouseHover(){  
              $(".advanttage-item").bind("mouseenter mouseleave",function(e) {  
