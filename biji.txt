@@ -456,7 +456,7 @@ a        默认根目录: /var/www/html
 
    (4) 日历控件 http://www.jq22.com/yanshi15933
 
-   (5)自定义图标   font-face属性   (Icon Font)  (web font)
+   (5)自定义图标 矢量图标   font-face属性   (Icon Font)  (web font)
 
        快速上手iconfont : http://ued.sina.com.cn/?p=1295  
 
@@ -527,7 +527,21 @@ a        默认根目录: /var/www/html
            3、 引入相关的css文件后， 只需在div中引入相关图标的class名即可， 如： 类‘icon-iconfontmeizhuangrihua’  <div id="" class="iconfont icon-iconfontmeizhuangrihua"> </div>
                     注意不能忘了同时引入 ‘iconfont’ 类
 
-                    
+
+
+
+  (6) 富文本编辑器 xheditor编辑器的使用     
+
+  (7) thinkphp
+
+        http://www.cnblogs.com/ji-an/p/6222754.html
+
+  (8) 判断鼠标移入移出元素时的方向
+
+        http://www.cnblogs.com/lyzg/p/5689761.html
+
+        https://blog.csdn.net/sunny_desmond/article/details/64905005
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
