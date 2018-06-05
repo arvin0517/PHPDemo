@@ -619,6 +619,111 @@ a        默认根目录: /var/www/html
             e.layerX——无
             e.offsetX——相对当前坐标系的内容区域左上角开始的坐标
 
+
+    (10) jquery 中参见的函数
+
+           jQuery.map()方法:  $.map( object, callback )
+
+                  $.map() 函数用于使用指定函数处理数组中的每个元素(或对象的每个属性)，并将处理结果封装为新的数组返回。
+
+                  例子：
+                       <script>
+                          $(function () { 
+                              var arr = [ "a", "b", "c", "d", "e" ];
+                              $("div").text(arr.join(", "));
+                              arr = $.map(arr, function(n, i){
+                                  return (n.toUpperCase() + i);
+                              });
+                              $("p").text(arr.join(", "));
+                              arr = $.map(arr, function (a) {
+                                  return a + a;
+                              });
+                              $("span").text(arr.join(", "));
+                          })
+                        </script>
+
+
+          jQuery.noop()方法：  $.noop()
+
+                 $.noop() 函数是一个空函数。
+
+                   注意： 此方法不接受任何参数。比如当插件提供了一个可选的回调函数接口，那么如果调用的时候没有传递这个回调函数，就用$.noop来代替执行。
+
+                   例子： 
+                          传入一个空函数作为参数，返回一个空数组
+
+                          $(function () { 
+                              var result = $.map( [1, 2, 3], $.noop );
+                              document.writeln( result.length );   // 0
+                          })
+
+
+
+          jQuery.extend()方法： 
+
+                语法：$.extend( target [, object1 ] [, objectN ] )
+
+                指示是否深度合并：$.extend( [deep ], target, object1 [, objectN ] )
+
+                 jQuery.extend() 函数用于将一个或多个对象的内容合并到目标对象。
+
+                 注意：1. 如果只为$.extend()指定了一个参数，则意味着参数target被省略。此时，target就是jQuery对象本身。通过这种方式，我们可以为全局对象jQuery添加新的函数。
+
+                       2. 如果多个对象具有相同的属性，则后者会覆盖前者的属性值。
+
+
+
+          jQuery.fn.extend()方法
+
+                 定义和用法：fn.extend() 函数为jQuery扩展一个或多个实例属性和方法(主要用于扩展方法)。
+
+                 提示：jQuery.fn是jQuery的原型对象，其extend()方法用于为jQuery的原型添加新的属性和方法。这些方法可以在jQuery实例对象上调用。
+
+                 语法
+                       $.fn.extend( object )
+
+                 例子：
+                      添加两个方法到jQuery原型($.fn)
+
+                      <label><input type="checkbox" name="foo"> Foo</label>
+                      <label><input type="checkbox" name="bar"> Bar</label>
+                      <script>
+                      $(function () { 
+                          $.fn.extend({
+                              check: function() {
+                                  return this.each(function() {
+                                      this.checked = true;
+                                  });
+                              },
+                              uncheck: function() {
+                                  return this.each(function() {
+                                      this.checked = false;
+                                  });
+                              }
+                          });
+                          // 使用新创建的.check() 方法
+                          $( "input[type='checkbox']" ).check();
+                      })
+                      </script>
+
+
+           额外知识： 
+
+              创建类:
+
+                    var MouseDirection = function (element, opts){ }
+
+              创建对象：
+
+                    new MouseDirection(element,opts);
+
+                    
+
+    （11）CentOS编译安装Nginx1.6、PHP5.6
+
+           http://www.leixuesong.cn/84
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
